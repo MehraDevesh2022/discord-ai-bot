@@ -36,7 +36,6 @@ DISCORD_TOKEN=YOUR_DISCORD_BOT_TOKEN
 
 - You can change your avatar however you like
 
-
 ![MasterHead](./gif/me.gif)<br>
 
 -  Create a new bot for the application by clicking on the **Add Bot** button.
@@ -48,7 +47,6 @@ DISCORD_TOKEN=YOUR_DISCORD_BOT_TOKEN
 ![MasterHead](./gif/me.gif)<br>
 
 - In the `.env` file, add the following line `DISCORD_TOKEN  = YOUR_DISCORD_BOT_TOKEN` and replace `YOUR_DISCORD_BOT_TOKEN` with the token of your bot.
-
 -  Now scroll down and enable the **Message Content Intent**
 
 ![MasterHead](./gif/me.gif)<br>
@@ -93,15 +91,10 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 ```
 4. This code is used to set up the Discord bot and the OpenAI API.
-
 5. First, we import the `dotenv` package, which allows us to access environment variables stored in a `.env` file. We then use the `config()` function to read the variables in the file.
-
 6. Next, we will create a variable `prompt` that will hold the conversation context for our chatbot. The variable will be updated every time a user sends a message to the chatbot.
-
 7. Next, we import the `discord.js` package, which is the library used to interact with the Discord API. We also import the `Client` class and the `GatewayIntentBits` enum from the package. We create an instance of the `Client` class, passing in an options object that specifies the intents we want to use. These intents determine the type of events that the bot will listen for. In this case, we are using `Guilds`, `GuildMessages`, and `MessageContent` intents.
-
 8. After that, we import the `Configuration` and `OpenAIApi` classes from the `openai` package. We use the `Configuration` class to set up the API with our API key, which is stored in the `.env` file and accessed via the `process.env.OPENAI_KEY` variable. We then create an instance of the `OpenAIApi` class and pass in the configuration object. This allows us to use the OpenAI API in our code and make requests to the API.
-
 9. Next, we will create a variable `prompt` that will hold the conversation context for our chatbot. The variable will be updated every time a user sends a message to the chatbot.
 
 ```javascript
@@ -150,12 +143,9 @@ client.on("messageCreate", function (message) {
 client.login(process.env.DISCORD_TOKEN);
 console.log('Your bot is  working now..');
 ```
-
 11. Here, we are checking if the message is from a bot. If it is, we return and do not process the message. If not, we add the user's message to the `prompt` variable and call the OpenAI API using the `openai.createCompletion()` function. We pass in several parameters such as the model we want to use, the conversation context in the `prompt` variable, and parameters such as the *maximum number of tokens*, *temperature*, and *penalties*.
- 
- 12. The API returns a response, which we then use to reply to the user's message. We use the `message.reply()` function to send the response back to the user. We also update the `prompt` variable with the bot's response. 
- 
- 13. Finally, we use the `client.login()` function to log in to our Discord bot using the token we stored in our `.env` file.
+12. The API returns a response, which we then use to reply to the user's message. We use the `message.reply()` function to send the response back to the user. We also update the `prompt` variable with the bot's response. 
+13. Finally, we use the `client.login()` function to log in to our Discord bot using the token we stored in our `.env` file.
 
      And that's it! With these steps, you should now have a working chatbot powered by OpenAI's GPT-3 model running on your Discord server. You can continue to customize and improve the chatbot by experimenting with different models, parameters, and conversation context. 
 
