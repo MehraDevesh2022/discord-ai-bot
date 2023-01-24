@@ -51,7 +51,7 @@ DISCORD_TOKEN=YOUR_DISCORD_BOT_TOKEN
 
 ![MasterHead](/utils/06.gif)<br>
 
-Next On the left hand side, click **OAuth2** and you should be redirected to the OAuth2 menu as seen below:
+- Next On the left hand side, click **OAuth2** and you should be redirected to the OAuth2 menu as seen below:
 
 ![MasterHead](/utils/09.gif)<br>
 
