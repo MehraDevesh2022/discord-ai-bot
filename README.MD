@@ -1,5 +1,5 @@
 # Unleashing the Power of GPT-3 for a Smarter Discord Chatbot
-![MasterHead](/utils/gif.gif) < br >
+![MasterHead](/utils/gif.gif)
 
 HI! In this project, we will be building a **Discord**. Chatbot that utilizes **OpenAI's GPT-3** language model to generate human-like responses to user input. This bot can be integrated into any Discord server to add a technical and intelligent conversational element to the community..
 
@@ -32,28 +32,28 @@ DISCORD_TOKEN=YOUR_DISCORD_BOT_TOKEN
 -  Create a Discord account and create a server where the bot will be hosted.
 - Go to the [Discord Developer Portal](https://discord.com/developers/applications) and create a new application.
 
-![MasterHead](./gif/me.gif)<br>
+![MasterHead](/utils/01.gif)<br>
 
 - You can change your avatar however you like
 
-![MasterHead](./gif/me.gif)<br>
+![MasterHead](/utils/03.gif)<br>
 
 -  Create a new bot for the application by clicking on the **Add Bot** button.
 
-![MasterHead](./gif/me.gif)<br>
+![MasterHead](/utils/04.gif)<br>
 
 - Under the **Build-A-Bot** section, you should see the option to reveal your hidden token. Click **Copy** to copy your token and store it in `.env` file.
 
-![MasterHead](./gif/me.gif)<br>
+![MasterHead](/utils/05.gif)<br>
 
 - In the `.env` file, add the following line `DISCORD_TOKEN  = YOUR_DISCORD_BOT_TOKEN` and replace `YOUR_DISCORD_BOT_TOKEN` with the token of your bot.
 -  Now scroll down and enable the **Message Content Intent**
 
-![MasterHead](./gif/me.gif)<br>
+![MasterHead](/utils/06.gif)<br>
 
 Next On the left hand side, click **OAuth2** and you should be redirected to the OAuth2 menu as seen below:
 
-![MasterHead](./gif/me.gif)<br>
+![MasterHead](/utils/09.gif)<br>
 
 - Place your Client ID in the URL below in place of **Client_Id** and paste it in your browser's address bar.
    https://discord.com/oauth2/authorize?scope=bot&permissions=&client_id=YOUR_CLIENT_ID
