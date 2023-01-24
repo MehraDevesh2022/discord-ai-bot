@@ -1,6 +1,5 @@
 # Unleashing the Power of GPT-3 for a Smarter Discord Chatbot
-
-![MasterHead](./gif/me.gif)<br>
+![MasterHead](/utils/gif.gif) < br >
 
 HI! In this project, we will be building a **Discord**. Chatbot that utilizes **OpenAI's GPT-3** language model to generate human-like responses to user input. This bot can be integrated into any Discord server to add a technical and intelligent conversational element to the community..
 

@@ -59,3 +59,4 @@ client.on("messageCreate", function (message) {
 // Login to Discord with provided token
 client.login(process.env.DISCORD_TOKEN);
 console.log('Your bot is  working now..');
+
