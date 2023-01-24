@@ -10,7 +10,13 @@ You :  What is the syntax for an if-else statement in JavaScript?\n\
 
 require('dotenv').config();
 const { Client, GatewayIntentBits } = require('discord.js');
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
+const client = new Client({ intents: 
+    [
+        GatewayIntentBits.Guilds, 
+        GatewayIntentBits.GuildMessages, 
+        GatewayIntentBits.MessageContent
+    ] 
+});
 const { Configuration, OpenAIApi } = require("openai");
 
 // Create new OpenAI Configuration object with API key
